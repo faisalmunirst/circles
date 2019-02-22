@@ -1,46 +1,65 @@
-<%-- 
-    Document   : index.jsp
-    Created on : Mar 8, 2015, 12:43:53 PM
-    Author     : andycobley
---%>
-
-<%@page import="java.text.SimpleDateFormat"%>
-<%@page import="java.text.DateFormat"%>
-<%@page import="java.util.Date"%>
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Circles and towns JSON generator</title>
-    </head>
-    <body>
-        <h1>Circles Data Generator</h1>
-        <P>Please select an option</p>
-        <p><a href="/Circles/Circles">Json circles</a></p>
-        <hr>
-        <h1>Towns Data Generator</h1>
-        <p><a href="/Circles/Towns/50">Json towns</a></p>
-        <hr>
-        <p><%
-            DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
-Date date = new Date();%>
-<%=date%></p
-        <hr>
-        <h2>D3 Examples:</h2>
-        <p>Not all examples are available at the moment</p>
-        <% for (int i=1;i<15;i++){ %>
-        <li><a href="Ex<%=i%>.html">Example <%=i %></a></li>
-        <% if (i==10){
-            %><li><a href="Ex<%=i%>a.html">Example <%=i%>a</a></li><%
-        }
-                }%>
-        </ul>
-        <p>&copy; Andy Cobley @ Computing Dundee University.</p>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+</head>
+<body>
+<script>
 
-        
-    <p>Forcing update</p>
-        
+var = abc
+$.ajax({
+  dataType: "json",
+  url: http://35.246.105.38/myflix/videos,
+  data: data,
+  success: success
+console.log('it is coneected')
+});
 
-    </body>
+var Db = require('mongodb').Db,
+<script>
+var username = 'admin';
+var password = 'changeit';
+
+function user_auth(){
+
+jQuery.ajax({
+    url : "http://35.246.105.38/myflix/videos",
+    type : 'get',
+    //data : 'username=' + encodeURIComponent(username) + '&password=' + encodeURIComponent(password),
+    dataType : 'json',
+    beforeSend: function (xhr) {
+      xhr.setRequestHeader ("Authorization", "Basic " + btoa(username + ":" + password));},
+    success : function(data) {
+        //error code
+          abc=console.log(data._embedded[0].video.ip);
+          floc= data._embedded[0].video.ip +data._embedded[0].video.file;
+          console.log(floc)
+    }})
+}
+
+function click(){
+window.location = "abc";
+}
+
+</script>
+
+
+<h1 style="text-align:center;text-decoration:underline; color:Red;font-size:60px"> Myflix
+</h1>
+<img value=" onclick" onclick = "window.location = 'http://34.73.136.231/beer.html'" style =  class="round-corners" src="http://34.73.156.253/beer.JPG" width="400" 
+height="225" alt="beer ">
+<img  value=" onclick" onclick = "window.location = 'http://34.73.136.231/cat.html'"  style =  class="round-corners" src="http://34.73.156.253/cat.JPG"
+ width="400" height="225" alt="cat">
+
+<img value=" onclick" onclick = "window.location = 'http://34.73.136.231/nature_01.html'"  style =  class="round-corners" src="http://34.73.156.253/nature_01.JPG"   width="400" height="225" alt="nature_01">
+
+<img value=" onclick" onclick = "window.location = 'http://34.73.136.231/nature_02.html'"  style =  class="round-corners" src="http://34.73.156.253/nature_02.JPG"
+ width="400" height="225" alt="nature_02">
+<img value=" onclick" onclick = "window.location = 'http://34.73.136.231/nature_03.html'"  style =  class="round-corners" src="http://34.73.156.253/nature_03.JPG"
+ width="400" height="225" alt="nature_03">
+
+<footer style="text-align:center; color:Red;font-size:25px"> copy right, 2019 Myflix
+</footer>
+
+</body>
+
 </html>
